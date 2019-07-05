@@ -63,7 +63,12 @@
 <!--        <table schema="ldx_user_role" tableName="ldx_user_role" domainObjectName="UserRole" mapperName="UserRoleDao" />-->
 <!--        <table schema="module" tableName="module" domainObjectName="Module" mapperName="ModuleDao" />-->
 <!--        <table schema="role_module" tableName="role_module" domainObjectName="RoleModule" mapperName="RoleModuleDao" />-->
-        <table schema="st_sys_log" tableName="st_sys_log" domainObjectName="Log" mapperName="LogDao" />
+<!--        <table schema="st_sys_log" tableName="st_sys_log" domainObjectName="Log" mapperName="LogDao" />-->
+        <table schema="box" tableName="box" domainObjectName="box" mapperName="boxDao" />
+        <table schema="cargo" tableName="cargo" domainObjectName="cargo" mapperName="cargoDao" />
+        <table schema="invoice" tableName="invoice" domainObjectName="invoice" mapperName="invoiceDao" />
+        <table schema="service" tableName="service" domainObjectName="service" mapperName="serviceDao" />
+
 
 
     </context>
