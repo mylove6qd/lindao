@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="project_service" />
+        <module name="project_common" />
         <module name="project_domain" />
         <module name="project_web" />
         <module name="project_dao" />
-        <module name="project_common" />
+        <module name="project_service" />
       </profile>
     </annotationProcessing>
   </component>
