@@ -7,16 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="325fb697-6f21-4ed0-be0e-a1f63556a071" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/system/ServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/service-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/dingdan/XiadanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/dingdan/add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/service.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_domain/target/classes/com/ldx/domain/export/service.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_domain/target/classes/com/ldx/domain/export/service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/lib/project_dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/lib/project_dao-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/lib/project_domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/lib/project_domain-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/lib/project_service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/lib/project_service-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,31 +44,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/system/ServiceController.java">
+        <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/dingdan/add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/service-list.jsp">
+        <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/dingdan/XiadanController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="130" column="36" lean-forward="true" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/company-list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1298">
-              <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+            <state relative-caret-position="330">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +73,8 @@
         <option value="Tag Library Descriptor" />
         <option value="JavaScript File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -115,6 +99,7 @@
       <find>query</find>
       <find>修改</find>
       <find>setOrderByClause</find>
+      <find>country</find>
     </findStrings>
     <replaceStrings>
       <replace>project_dao</replace>
@@ -130,9 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/LoginContraller.java" />
-        <option value="$PROJECT_DIR$/project_service/src/main/java/com/ldx/service/CompanyService.java" />
-        <option value="$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/User.java" />
         <option value="$PROJECT_DIR$/project_dao/src/main/java/com/ldx/dao/export/CompanyDao.java" />
         <option value="$PROJECT_DIR$/project_dao/src/main/resources/com/ldx/dao/export/CompanyDao.xml" />
         <option value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/system/user/user-add.jsp" />
@@ -181,6 +163,9 @@
         <option value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/company-list.jsp" />
         <option value="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/system/ServiceController.java" />
         <option value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/service-list.jsp" />
+        <option value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/dingdan/add.jsp" />
+        <option value="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/xiadan/XiadanController.java" />
+        <option value="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/dingdan/XiadanController.java" />
       </list>
     </option>
   </component>
@@ -216,8 +201,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="40" />
-    <option name="y" value="35" />
+    <option name="x" value="10" />
+    <option name="y" value="46" />
     <option name="width" value="1870" />
     <option name="height" value="1035" />
   </component>
@@ -434,6 +419,17 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lindao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lindao" type="462c0819:PsiDirectoryNode" />
+              <item name="project_web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="dingdan" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -630,7 +626,7 @@
       <workItem from="1562375325481" duration="109000" />
       <workItem from="1562376394436" duration="726000" />
       <workItem from="1562484647149" duration="410000" />
-      <workItem from="1562487566197" duration="2888000" />
+      <workItem from="1562487566197" duration="5920000" />
     </task>
     <task id="LOCAL-00001" summary="one commit 1.0">
       <created>1562287632999</created>
@@ -667,17 +663,24 @@
       <option name="project" value="LOCAL" />
       <updated>1562485016428</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="服务页面的查询">
+      <created>1562490485929</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562490485929</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114683000" />
+    <option name="totallyTimeSpent" value="117715000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="32" y="28" width="1496" height="828" extended-state="0" />
+    <frame x="8" y="37" width="1496" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22878999" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22878999" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -688,7 +691,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.13342898" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33189654" />
-      <window_info active="true" anchor="bottom" x="421" y="270" width="717" height="344" id="Debug" order="3" sideWeight="0.49791378" visible="true" weight="0.24425288" />
+      <window_info anchor="bottom" x="421" y="270" width="717" height="344" id="Debug" order="3" sideWeight="0.49791378" visible="true" weight="0.14798851" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -760,41 +763,14 @@
     <MESSAGE value="one commit 1.1text" />
     <MESSAGE value="one commit 1.2text" />
     <MESSAGE value="gitignore 补充" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore 补充" />
+    <MESSAGE value="服务页面的查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="服务页面的查询" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/convertes/StringToDateConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/home/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="246" column="34" lean-forward="true" selection-start-line="246" selection-start-column="34" selection-end-line="246" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.2.RELEASE/spring-aop-5.0.2.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="435" column="5" lean-forward="true" selection-start-line="435" selection-start-column="5" selection-end-line="435" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/system/user/user-update.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -924,9 +900,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/cargo.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1116,9 +1089,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/company-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1298">
+          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/company-update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/service-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2153">
+          <caret line="107" column="32" lean-forward="true" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/company-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="107" column="14" lean-forward="true" selection-end-line="124" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="770">
           <caret line="38" column="24" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="24" />
           <folding>
             <element signature="e#332#333#0" expanded="true" />
@@ -1129,34 +1130,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/company-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1298">
-          <caret line="36" column="15" lean-forward="true" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/company/CompanyContraller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1034">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/system/ServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="32" />
+        <state relative-caret-position="448">
+          <caret line="31" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/company/service-list.jsp">
+    <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="130" column="36" lean-forward="true" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
+        <state relative-caret-position="289">
+          <caret line="163" column="26" selection-start-line="163" selection-start-column="19" selection-end-line="163" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/company/CompanyContraller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/dingdan/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/dingdan/XiadanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
