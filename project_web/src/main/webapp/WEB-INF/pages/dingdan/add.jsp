@@ -37,7 +37,7 @@
         <!--订单信息-->
         <div class="panel panel-default">
             <div class="panel-heading">下单管理</div>
-            <form id="editForm" action="${ctx}/xiadan/edit.do" method="post">
+            <form id="editForm" action="${ctx}/xiadan/adddingdan.do" method="post">
                 <%--                <input type="hidden" name="id" value="${company.companyId}">--%>
                 <div class="row data-type" style="margin: 0px">
 
@@ -52,6 +52,13 @@
                     </div>
 
 
+                    <div class="col-md-2 title">箱数</div>
+                    <div class="col-md-4 data">
+                        <input type="text" class="form-control" required placeholder="箱数" name="invoiceRemark" >
+                    </div>
+
+
+
                     <div class="col-md-2 title">收件地址</div>
                     <div class="col-md-4 data">
                         <input type="text" class="form-control" required placeholder="收件地址" name="toAdress"   >
@@ -61,9 +68,6 @@
                     <div class="col-md-4 data">
                         <input type="text" class="form-control" required placeholder="目的地国家" name="country"  >
                     </div>
-
-
-
 
                 </div>
             </form>

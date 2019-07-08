@@ -98,7 +98,6 @@
 
                             </th>
                             <th class="sorting">企业名称</th>
-
                             <th class="sorting">服务名称</th>
                             <th class="sorting">价格</th>
 
