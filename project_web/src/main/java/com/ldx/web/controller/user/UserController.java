@@ -170,17 +170,9 @@ public class UserController extends BaseController {
         return "redirect:/system/user/list.do";
     }
 
-    /**
-     * 前往给用户分配角色的页面
-     * @param id 用户的id
-     * @return
-     */
 
 
-    /**
-     * 给用户分配角色
-     * @return
-     */
+
 
 }
 

@@ -116,7 +116,7 @@
                                 <td>${item.price}</td>
 
                                 <td class="text-center">
-                                  //  <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/company/toUpdate.do?id=${item.companyId}"'>编辑</button>
+                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/company/toUpdate.do?id=${item.companyId}"'>编辑</button>
                                 </td>
 
                             </tr>

@@ -1,7 +1,6 @@
 package com.ldx.web.controller.dingdan;
 
 
-import com.ldx.dao.export.CompanyDao;
 import com.ldx.dao.export.invoiceDao;
 import com.ldx.domain.export.User;
 import com.ldx.domain.export.invoice;
@@ -38,7 +37,7 @@ public class XiadanController extends BaseController {
         User user = (User)session.getAttribute("user");
         String companyId = user.getCompanyId();
         invoice.setFromCompany(user.getCompanyName());
-        invoice.setRemark(user.getCompanyName()+" "+invoice.getFbaId()+" "+invoice.getInvoiceRemark()+"箱");
+        invoice.setRemark(user.getCompanyName()+" "+invoice.getCountry()+" "+invoice.getInvoiceRemark()+"箱"+invoice.getFbaId()+" ");
         invoiceDao.insertSelective(invoice);
 
         return "home/home";
