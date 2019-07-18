@@ -11,6 +11,7 @@
     <meta name="description" content="AdminLTE2定制版">
     <meta name="keywords" content="AdminLTE2定制版">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+
 </head>
 
 <body class="hold-transition skin-green sidebar-mini" >
@@ -38,6 +39,8 @@
 
 <script src="${ctx}/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <script src="${ctx}/plugins/jQueryUI/jquery-ui.min.js"></script>
+<script src="${ctx}/js/vuejs-2.5.16.js"></script>
+<script src="${ctx}/js/axios-0.18.0.js"></script>
 <script>
     $.widget.bridge('uibutton', $.ui.button);
 </script>
