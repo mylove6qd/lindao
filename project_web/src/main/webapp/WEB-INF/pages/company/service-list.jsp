@@ -34,7 +34,7 @@
         var id = getCheckId()
         if(id) {
             if(confirm("你确认要删除此条记录吗？")) {
-                // location.href="${ctx}/company/delete.do?id="+id;
+                 location.href="${ctx}/system/service/delete.do?id="+id;
             }
         }else{
             alert("请勾选待处理的记录，且每次只能勾选一个")
@@ -75,7 +75,7 @@
                     <div class="pull-left">
                         <div class="form-group form-inline">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default" title="新建" onclick='location.href="${ctx}/company/toAdd.do"'><i class="fa fa-file-o"></i> 新建</button>
+                                <button type="button" class="btn btn-default" title="新建" onclick='location.href="${ctx}/system/service/toUpdate.do"'><i class="fa fa-file-o"></i> 新建</button>
                                 <button type="button" class="btn btn-default" title="删除" onclick='deleteById()'><i class="fa fa-trash-o"></i> 删除</button>
                                 <button type="button" class="btn btn-default" title="刷新" onclick="window.location.reload();"><i class="fa fa-refresh"></i> 刷新</button>
                             </div>
@@ -108,7 +108,7 @@
                         <tbody>
                         <c:forEach items="${page.list}" var="item">
                             <tr>
-                                <td><input name="ids" value="${item.companyId}" type="checkbox"></td>
+                                <td><input name="ids" value="${item.serviceId}" type="checkbox"></td>
                                 <td>
                                         ${item.serviceName}
                                 </td>
@@ -116,7 +116,7 @@
                                 <td>${item.price}</td>
 
                                 <td class="text-center">
-                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/company/toUpdate.do?id=${item.companyId}"'>编辑</button>
+                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/system/service/toUpdate.do?id=${item.companyId}"'>编辑</button>
                                 </td>
 
                             </tr>

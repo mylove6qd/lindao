@@ -108,7 +108,7 @@
                                 <td>${item.remark}</td>
 
                                 <th class="text-center">
-                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/rucang/update.do?id=${item.invoiceId}"'>编辑</button>
+                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/rucang/update.do?id=${item.invoiceId}"'>入仓</button>
                                 </th>
                             </tr>
                         </c:forEach>

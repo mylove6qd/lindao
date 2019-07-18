@@ -17,6 +17,8 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -102,9 +104,9 @@ public class rucang extends BaseController {
         invoice invoice = new invoice();
 
         invoice.setInvoiceId(invId);
-        invoice.setInhomeConweight(new Double(inw).toString());
-        invoice.setInhomeConvol5(new Double(in5).toString());
-        invoice.setInhomeConvol6(new Double(in6).toString());
+        invoice.setInhomeConweight(new Double(new BigDecimal(inw).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue()).toString());
+        invoice.setInhomeConvol5(new Double(new BigDecimal(in5).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue()).toString());
+        invoice.setInhomeConvol6(new Double(new BigDecimal(in6).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue()).toString());
 
         //修改发票表
         invoiceDao.updateByPrimaryKeySelective(invoice);

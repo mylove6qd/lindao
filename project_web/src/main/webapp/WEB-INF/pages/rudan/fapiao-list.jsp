@@ -54,7 +54,7 @@
     <section class="content-header">
         <h1>
             入单管理
-            <small>出仓</small>
+            <small>发票打印</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="all-admin-index.html"><i class="fa fa-dashboard"></i> 首页</a></li>
@@ -63,7 +63,7 @@
     <section class="content">
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">用户列表</h3>
+                <h3 class="box-title">订单列表</h3>
             </div>
             <div class="box-body">
                 <div class="table-box">
@@ -97,7 +97,7 @@
                             <th class="sorting">FBA号</th>
                             <th class="sorting">详细信息</th>
 
-                            <th class="text-center">操作</th>
+                            <th class="text-center">发票打印</th>
 
                         </tr>
                         </thead>
@@ -108,7 +108,7 @@
                                 <td>${item.remark}</td>
 
                                 <th class="text-center">
-                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/chucang/update.do?id=${item.invoiceId}"'>出仓</button>
+                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/fapiao/work.do?id=${item.invoiceId}"'>发票打印</button>
                                 </th>
                             </tr>
                         </c:forEach>
@@ -118,7 +118,7 @@
             </div>
             <div class="box-footer">
                 <jsp:include page="../common/page.jsp">
-                    <jsp:param value="${ctx}/rudan/chucang/list.do" name="pageUrl"/>
+                    <jsp:param value="${ctx}/rudan/fapiao/list.do" name="pageUrl"/>
                 </jsp:include>
             </div>
         </div>

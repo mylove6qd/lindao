@@ -2,6 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="../base.jsp"%>
 <%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 
@@ -54,7 +55,7 @@
     <section class="content-header">
         <h1>
             入单管理
-            <small>出仓</small>
+            <small>分货</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="all-admin-index.html"><i class="fa fa-dashboard"></i> 首页</a></li>
@@ -78,7 +79,7 @@
 <%--                                <button type="button" class="btn btn-default" title="删除" onclick='deleteById()'><i class="fa fa-trash-o"></i> 删除</button>--%>
                                 <%--                            </shiro:hasPermission>--%>
 
-
+                                <button type="button" class="btn btn-default" title="选中提交">选中提交</button>
                                 <button type="button" class="btn btn-default" title="刷新" onclick="window.location.reload();"><i class="fa fa-refresh"></i> 刷新</button>
 
                                     <div class="box-tools pull-right">
@@ -94,9 +95,15 @@
                     <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
                         <thead>
                         <tr>
+                            <th><input type="checkbox"></th>
                             <th class="sorting">FBA号</th>
-                            <th class="sorting">详细信息</th>
-
+                            <th class="sorting">箱数</th>
+                            <th class="sorting">国家</th>
+                            <th class="sorting">入重/出重</th>
+                            <th class="sorting">5k比例</th>
+                            <th class="sorting">6k比例</th>
+                            <th class="sorting">5k入/出</th>
+                            <th class="sorting">6k入/出</th>
                             <th class="text-center">操作</th>
 
                         </tr>
@@ -104,11 +111,23 @@
                         <tbody>
                         <c:forEach items="${page.list}" var="item" varStatus="a">
                             <tr>
+                                <td><input type="checkbox" class="chb"></td>
                                 <td>${item.fbaId}</td>
-                                <td>${item.remark}</td>
+                                <td>${item.invoiceRemark}</td>
+                                <td>${item.country}</td>
+                                <td>${item.inhomeConweight}/${item.outhomeConweight2}</td>
+                                <td><fmt:formatNumber maxFractionDigits="2" value="${item.inhomeConvol5/item.outhomeConvol5}"></fmt:formatNumber></td>
+                                <td><fmt:formatNumber maxFractionDigits="2" value="${item.inhomeConvol6/item.outhomeConvol6}"></fmt:formatNumber></td>
+                                <td>${item.inhomeConvol5}/${item.outhomeConvol5}</td>
+                                <td>${item.inhomeConvol6}/${item.outhomeConvol6}</td>
+
+                                <select>
+                                    <option value ="volvo">Volvo</option>
+                                </select>
+
 
                                 <th class="text-center">
-                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/chucang/update.do?id=${item.invoiceId}"'>出仓</button>
+                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/fenhuo/work.do?id=${item.invoiceId}"'>提交</button>
                                 </th>
                             </tr>
                         </c:forEach>
@@ -118,7 +137,7 @@
             </div>
             <div class="box-footer">
                 <jsp:include page="../common/page.jsp">
-                    <jsp:param value="${ctx}/rudan/chucang/list.do" name="pageUrl"/>
+                    <jsp:param value="${ctx}/rudan/fenhuo/list.do" name="pageUrl"/>
                 </jsp:include>
             </div>
         </div>

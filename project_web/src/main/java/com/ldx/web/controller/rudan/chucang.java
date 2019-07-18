@@ -17,6 +17,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -108,9 +109,9 @@ public class chucang extends BaseController {
         invoice invoice = new invoice();
 
         invoice.setInvoiceId(invId);
-        invoice.setOuthomeConweight2(new Double(inw).toString());
-        invoice.setOuthomeConvol5(new Double(in5).toString());
-        invoice.setOuthomeConvol6(new Double(in6).toString());
+        invoice.setOuthomeConweight2(new Double(new BigDecimal(inw).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue()).toString());
+        invoice.setOuthomeConvol5(new Double(new BigDecimal(in5).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue()).toString());
+        invoice.setOuthomeConvol6(new Double(new BigDecimal(in6).setScale(2, BigDecimal.ROUND_HALF_UP).doubleValue()).toString());
 
         //修改发票表
         invoiceDao.updateByPrimaryKeySelective(invoice);
