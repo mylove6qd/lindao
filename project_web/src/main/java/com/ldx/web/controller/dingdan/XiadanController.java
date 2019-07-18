@@ -38,7 +38,7 @@ public class XiadanController extends BaseController {
     public String adddingdan(invoice invoice){
         //添加发票
         invoice.setInvoiceId(UtilFuns.getUUID());
-        invoice.setDate(new Date().toString());
+        invoice.setDate(new Date());
         User user = (User)session.getAttribute("user");
         String companyId = user.getCompanyId();
         invoice.setFromCompany(user.getCompanyName());
