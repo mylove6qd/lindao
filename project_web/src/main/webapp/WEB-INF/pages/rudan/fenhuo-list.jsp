@@ -18,6 +18,14 @@
 </head>
 <script>
 
+    function chb() {
+        var elementById = document.getElementById('fa');
+        var elementsByClassName = document.getElementsByClassName('chb');
+        for (var i = 0 ;i<elementsByClassName.length;i++){
+            elementsByClassName[i].checked=elementById.checked;
+        }
+    }
+    
     function query(){
 
         //搜索页面关键字
@@ -79,7 +87,7 @@
 <%--                                <button type="button" class="btn btn-default" title="删除" onclick='deleteById()'><i class="fa fa-trash-o"></i> 删除</button>--%>
                                 <%--                            </shiro:hasPermission>--%>
 
-                                <button type="button" class="btn btn-default" title="选中提交">选中提交</button>
+
                                 <button type="button" class="btn btn-default" title="刷新" onclick="window.location.reload();"><i class="fa fa-refresh"></i> 刷新</button>
 
                                     <div class="box-tools pull-right">
@@ -95,7 +103,7 @@
                     <table id="dataList" class="table table-bordered table-striped table-hover dataTable">
                         <thead>
                         <tr>
-                            <th><input type="checkbox"></th>
+                            <th><input id="fa" type="checkbox" onchange="chb()"></th>
                             <th class="sorting">FBA号</th>
                             <th class="sorting">箱数</th>
                             <th class="sorting">国家</th>
@@ -104,14 +112,18 @@
                             <th class="sorting">6k比例</th>
                             <th class="sorting">5k入/出</th>
                             <th class="sorting">6k入/出</th>
+                            <th class="text-center">渠道</th>
                             <th class="text-center">操作</th>
 
                         </tr>
                         </thead>
                         <tbody>
                         <c:forEach items="${page.list}" var="item" varStatus="a">
+
+                            <form id="smallform" action="${ctx}/rudan/fenhuo/work.do" method="post">
                             <tr>
-                                <td><input type="checkbox" class="chb"></td>
+                                <input value="${item.invoiceId}" type="hidden" name="invoiceId">
+                                <td><input type="checkbox" name="isSel" class="chb"></td>
                                 <td>${item.fbaId}</td>
                                 <td>${item.invoiceRemark}</td>
                                 <td>${item.country}</td>
@@ -120,16 +132,18 @@
                                 <td><fmt:formatNumber maxFractionDigits="2" value="${item.inhomeConvol6/item.outhomeConvol6}"></fmt:formatNumber></td>
                                 <td>${item.inhomeConvol5}/${item.outhomeConvol5}</td>
                                 <td>${item.inhomeConvol6}/${item.outhomeConvol6}</td>
-
-                                <select>
-                                    <option value ="volvo">Volvo</option>
-                                </select>
-
-
+                                <td>
+                                    <select name="serviceid">
+                                        <c:forEach items="${service}" var="item">
+                                            <option  value ="${item.serviceId}">${item.remark}</option>
+                                        </c:forEach>
+                                    </select>
+                                </td>
                                 <th class="text-center">
-                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/fenhuo/work.do?id=${item.invoiceId}"'>提交</button>
+                                    <button form="smallform" type="submit" class="btn bg-olive btn-xs" >提交</button>
                                 </th>
                             </tr>
+                            </form>
                         </c:forEach>
                         </tbody>
                     </table>

@@ -1,8 +1,10 @@
 com\ldx\service\Impl\LogServiceImpl.class
 com\ldx\service\LogService.class
 com\ldx\service\CompanyService.class
+com\ldx\service\ServerServer.class
 com\ldx\service\Impl\UserServiceImpl.class
 com\ldx\service\ModuleService.class
 com\ldx\service\UserService.class
 com\ldx\service\Impl\ModuleServiceImpl.class
+com\ldx\service\Impl\ServerServerImpl.class
 com\ldx\service\Impl\CompanyServiceImpl.class

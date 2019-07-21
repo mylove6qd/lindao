@@ -3,9 +3,6 @@ package com.ldx.web.controller.rudan;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.ldx.dao.export.invoiceDao;
-import com.ldx.domain.export.box;
-import com.ldx.domain.export.boxExample;
 import com.ldx.domain.export.invoice;
 import com.ldx.domain.export.invoiceExample;
 import com.ldx.web.controller.system.BaseController;
@@ -30,38 +27,50 @@ public class fapiao extends BaseController {
     private com.ldx.dao.export.invoiceDao invoiceDao;
 
 
-    //给入单输入入仓尺寸的页面
+    //提供下载
     @RequestMapping("/work")
-    public String update(String id){
-        return null;
+    public String work(String invoiceId,String serviceid){
+      return null;
     }
 
 
 
 
     @RequestMapping("/list")
-    public String list(@Param("query") String query, @RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "15") int size){
+    public String list(@Param("query") String query, @RequestParam(defaultValue = "1") int page, @RequestParam(defaultValue = "15") int size) {
 
 
         invoiceExample invoiceExample = new invoiceExample();
         com.ldx.domain.export.invoiceExample.Criteria criteria = invoiceExample.createCriteria();
-        criteria.andUserIdIsNull();
+
         if (!StringUtils.isEmpty(query)) {
             //入仓数据(总重量 总体积)是空或者null
-            criteria.andFbaIdLike("%"+query+"%");
+            criteria.andFbaIdLike("%" + query + "%");
+            invoiceExample.setOrderByClause("`date` DESC");
 
+            PageHelper.startPage(page, size);
+            List<invoice> invoices = invoiceDao.selectByExample(invoiceExample);
+            PageInfo<invoice> invoicePageInfo = new PageInfo<>(invoices);
+
+            session.setAttribute("", invoicePageInfo);
+            request.setAttribute("page", invoicePageInfo);
+            request.setAttribute("query", query);
+
+            return "rudan/fapiao-list";
+
+        } else {
+            criteria.andUserIdIsNull();
+            invoiceExample.setOrderByClause("`date` DESC");
+
+            PageHelper.startPage(page, size);
+            List<invoice> invoices = invoiceDao.selectByExample(invoiceExample);
+            PageInfo<invoice> invoicePageInfo = new PageInfo<>(invoices);
+
+            session.setAttribute("", invoicePageInfo);
+            request.setAttribute("page", invoicePageInfo);
+            request.setAttribute("query", query);
+
+            return "rudan/fapiao-list";
         }
-        invoiceExample.setOrderByClause("`date` DESC");
-
-        PageHelper.startPage(page,size);
-        List<invoice> invoices = invoiceDao.selectByExample(invoiceExample);
-        PageInfo<invoice> invoicePageInfo = new PageInfo<>(invoices);
-
-        session.setAttribute("",invoicePageInfo);
-        request.setAttribute("page",invoicePageInfo);
-        request.setAttribute("query",query);
-
-        return "rudan/fapiao-list";
     }
-
 }
