@@ -7,13 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="325fb697-6f21-4ed0-be0e-a1f63556a071" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/rudan/jiage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/jiage-list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/chaxun/huojian.java" beforeDir="false" afterPath="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/chaxun/huojian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/chanxun-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/chanxun-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/fenhuo-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/fenhuo-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_domain/target/classes/com/ldx/domain/export/invoice.class" beforeDir="false" afterPath="$PROJECT_DIR$/project_domain/target/classes/com/ldx/domain/export/invoice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/lib/project_domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/lib/project_domain-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/pages/rudan/fenhuo-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/project_web/target/project_web-1.0-SNAPSHOT/WEB-INF/pages/rudan/fenhuo-list.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,14 +47,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/chaxun/huojian.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/rudan/jiage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/jiage-list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="133" selection-start-line="133" selection-end-line="134" />
             </state>
           </provider>
         </entry>
@@ -71,13 +89,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="194" column="21" selection-start-line="194" selection-start-column="17" selection-end-line="194" selection-end-column="21" />
+            <state relative-caret-position="591">
+              <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
               <folding>
                 <element signature="e#354#355#0" expanded="true" />
                 <element signature="e#385#386#0" expanded="true" />
                 <element signature="e#433#434#0" expanded="true" />
                 <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#939#940#0" expanded="true" />
+                <element signature="e#993#994#0" expanded="true" />
+                <element signature="e#1039#1040#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,7 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Mybatis_reverse_project_dao</find>
       <find>ldc</find>
       <find>company</find>
       <find>ldx_company.export</find>
@@ -154,6 +175,10 @@
       <find>rudan</find>
       <find>war</find>
       <find>/huojian/chaxun</find>
+      <find>service</find>
+      <find>分货</find>
+      <find>fenhuo</find>
+      <find>ser</find>
     </findStrings>
     <replaceStrings>
       <replace>project_dao</replace>
@@ -166,6 +191,8 @@
       <replace>chucang</replace>
       <replace>chudan</replace>
       <replace>/huojian/chaxun/</replace>
+      <replace>价格</replace>
+      <replace>jiage</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -174,8 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/project_common/src/main/java/com/ldx/utils/MD5Encrypt.java" />
-        <option value="$PROJECT_DIR$/project_service/src/main/java/com/ldx/service/Impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/project_service/src/main/java/com/ldx/service/Impl/CompanyServiceImpl.java" />
         <option value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/system/log/log-list.jsp" />
         <option value="$PROJECT_DIR$/project_service/src/main/java/com/ldx/service/LogService.java" />
@@ -221,10 +246,12 @@
         <option value="$PROJECT_DIR$/project_web/src/main/resources/properties/redis-config.properties" />
         <option value="$PROJECT_DIR$/project_web/src/main/resources/properties/wuliu.properties" />
         <option value="$PROJECT_DIR$/project_web/src/test/java/test.java" />
-        <option value="$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java" />
         <option value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/chanxun-list.jsp" />
         <option value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/fenhuo-list.jsp" />
         <option value="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/chaxun/huojian.java" />
+        <option value="$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java" />
+        <option value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/jiage-list.jsp" />
+        <option value="$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/rudan/jiage.java" />
       </list>
     </option>
   </component>
@@ -458,7 +485,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/project_web/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -473,24 +500,24 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\resources" />
-      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\webapp\WEB-INF\pages\rudan" />
-      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\resources\spring" />
-      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\webapp\WEB-INF\pages\company" />
-      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\webapp\js" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.ldx.web.controller.chaxun" />
-      <recent name="com.ldx.web.controller.rudan" />
-      <recent name="com.ldx.web.utils" />
-      <recent name="com.ldx.web.controller" />
-      <recent name="com.ldx.web.convertes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\webapp" />
       <recent name="C:\Users\lcx\IdeaProjects\lindao\project_domain\src\main\java\com\ldx\domain\company" />
       <recent name="C:\Users\lcx\IdeaProjects\lindao\project_dao\src\main\resources\properties" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ldx.web.controller.rudan" />
+      <recent name="com.ldx.web.controller.chaxun" />
+      <recent name="com.ldx.web.utils" />
+      <recent name="com.ldx.web.controller" />
+      <recent name="com.ldx.web.convertes" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\webapp\WEB-INF\pages\rudan" />
+      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\resources" />
+      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\resources\spring" />
+      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\webapp\WEB-INF\pages\company" />
+      <recent name="C:\Users\lcx\IdeaProjects\lindao\project_web\src\main\webapp\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -695,7 +722,7 @@
       <workItem from="1563694110183" duration="785000" />
       <workItem from="1563701096586" duration="6494000" />
       <workItem from="1563710123034" duration="11725000" />
-      <workItem from="1563755738619" duration="5337000" />
+      <workItem from="1563755738619" duration="6882000" />
     </task>
     <task id="LOCAL-00001" summary="one commit 1.0">
       <created>1562287632999</created>
@@ -788,11 +815,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563725745690</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="完成确认签收">
+      <created>1563801403500</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1563801403500</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211981000" />
+    <option name="totallyTimeSpent" value="213526000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -807,18 +841,18 @@
     <frame x="28" y="29" width="1500" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80911064" visible="true" weight="0.22191401" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.81104034" visible="true" weight="0.22191401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.19088937" side_tool="true" visible="true" weight="0.22191401" />
+      <window_info id="Web" order="7" sideWeight="0.18895966" side_tool="true" visible="true" weight="0.22191401" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.13342898" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.55857146" />
-      <window_info active="true" anchor="bottom" x="421" y="270" width="717" height="344" id="Debug" order="3" sideWeight="0.49791378" visible="true" weight="0.34142858" />
+      <window_info active="true" anchor="bottom" x="421" y="270" width="717" height="344" id="Debug" order="3" sideWeight="0.49791378" visible="true" weight="0.32714286" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
@@ -898,21 +932,14 @@
     <MESSAGE value="出仓完成 修改了发票表字段 varchar --&gt; datetine" />
     <MESSAGE value="完成服务crud未测试 完成分货页面 生成发票页面" />
     <MESSAGE value="完成客户单号查询 完成货运单号批处理添加修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成客户单号查询 完成货运单号批处理添加修改" />
+    <MESSAGE value="完成确认签收" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成确认签收" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.2.RELEASE/spring-web-5.0.2.RELEASE.jar!/org/springframework/web/bind/annotation/PostMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/boxs.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.2.RELEASE/spring-core-5.0.2.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1168,13 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/rudan/fapiao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -1255,26 +1275,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/fenhuo-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="194" column="21" selection-start-line="194" selection-start-column="17" selection-end-line="194" selection-end-column="21" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1282,13 +1282,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.2.RELEASE/spring-webmvc-5.0.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerMapping.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/fenhuo-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/webapp/WEB-INF/pages/rudan/jiage-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="133" selection-start-line="133" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_domain/src/main/java/com/ldx/domain/export/invoice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/chaxun/huojian.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_web/src/main/java/com/ldx/web/controller/rudan/jiage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
         </state>
       </provider>
     </entry>

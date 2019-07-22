@@ -63,7 +63,7 @@
     <section class="content-header">
         <h1>
             入单管理
-            <small>分货</small>
+            <small>价格</small>
         </h1>
         <ol class="breadcrumb">
             <li><a href="all-admin-index.html"><i class="fa fa-dashboard"></i> 首页</a></li>
@@ -106,13 +106,13 @@
                             <th><input id="fa" type="checkbox" onchange="chb()"></th>
                             <th class="sorting">详情</th>
                             <th class="sorting">箱数</th>
-                            <th class="sorting">国家</th>
                             <th class="sorting">入重/出重</th>
                             <th class="sorting">5k比例</th>
                             <th class="sorting">6k比例</th>
                             <th class="sorting">5k入/出</th>
                             <th class="sorting">6k入/出</th>
-                            <th class="text-center">渠道</th>
+                            <th class="sorting">渠道</th>
+                            <th class="sorting">价格</th>
                             <th class="text-center">操作</th>
 
                         </tr>
@@ -120,25 +120,19 @@
                         <tbody>
                         <c:forEach items="${page.list}" var="item" varStatus="a">
 
-                            <form id="smallform" action="${ctx}/rudan/fenhuo/work.do" method="post">
+                            <form id="smallform" action="${ctx}/rudan/jiage/work.do" method="post">
                             <tr>
                                 <input value="${item.invoiceId}" type="hidden" name="invoiceId">
                                 <td><input type="checkbox" name="isSel" class="chb"></td>
                                 <td>${item.remark}</td>
                                 <td>${item.invoiceRemark}</td>
-                                <td>${item.country}</td>
                                 <td>${item.inhomeConweight}/${item.outhomeConweight2}</td>
                                 <td><fmt:formatNumber maxFractionDigits="2" value="${item.inhomeConvol5/item.outhomeConvol5}"></fmt:formatNumber></td>
                                 <td><fmt:formatNumber maxFractionDigits="2" value="${item.inhomeConvol6/item.outhomeConvol6}"></fmt:formatNumber></td>
                                 <td>${item.inhomeConvol5}/${item.outhomeConvol5}</td>
                                 <td>${item.inhomeConvol6}/${item.outhomeConvol6}</td>
-                                <td>
-                                    <select name="serviceid">
-                                        <c:forEach items="${service}" var="item">
-                                            <option  value ="${item.serviceId}">${item.remark}</option>
-                                        </c:forEach>
-                                    </select>
-                                </td>
+                                <td>${item.serviceName}</td>
+                                <td><input type="text" name="price"></td>
                                 <th class="text-center">
                                     <button form="smallform" type="submit" class="btn bg-olive btn-xs" >提交</button>
                                 </th>
@@ -151,7 +145,7 @@
             </div>
             <div class="box-footer">
                 <jsp:include page="../common/page.jsp">
-                    <jsp:param value="${ctx}/rudan/fenhuo/list.do" name="pageUrl"/>
+                    <jsp:param value="${ctx}/rudan/jiage/list.do" name="pageUrl"/>
                 </jsp:include>
             </div>
         </div>
