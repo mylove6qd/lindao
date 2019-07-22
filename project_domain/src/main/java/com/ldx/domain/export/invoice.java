@@ -12,6 +12,15 @@ public class invoice {
      */
     private String invoiceId;
 
+    private String linkTest;
+
+    public String getLinkTest() {
+        return linkTest;
+    }
+
+    public void setLinkTest(String linkTest) {
+        this.linkTest = linkTest;
+    }
 
     private String link;
 

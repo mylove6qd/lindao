@@ -82,6 +82,7 @@
                             <th class="sorting">FBA号</th>
                             <th class="sorting">详情</th>
                             <th class="sorting">承运商-单号</th>
+                            <th class="sorting">寄件日期</th>
                             <th class="sorting">查询链接</th>
                             <th class="text-center">操作</th>
 
@@ -96,9 +97,10 @@
                                 <td>${item.fbaId}</td>
                                 <td>${item.remark}</td>
                                 <td>${item.queryId}</td>
-                                <td><a href="${item.link}" target="_blank">${item.link}</a></td>
+                                <td>${item.date}</td>
+                                <td><a href="${item.link}" target="_blank">${item.linkTest}</a></td>
                                 <th class="text-center">
-                                    <button form="smallform" type="submit" class="btn bg-olive btn-xs" >已签收</button>
+                                    <button form="smallform" type="submit" class="btn bg-olive btn-xs" >确认签收</button>
                                 </th>
                             </tr>
                             </form>

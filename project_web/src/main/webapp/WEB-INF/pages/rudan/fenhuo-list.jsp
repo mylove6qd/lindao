@@ -104,7 +104,7 @@
                         <thead>
                         <tr>
                             <th><input id="fa" type="checkbox" onchange="chb()"></th>
-                            <th class="sorting">FBA号</th>
+                            <th class="sorting">详情</th>
                             <th class="sorting">箱数</th>
                             <th class="sorting">国家</th>
                             <th class="sorting">入重/出重</th>
@@ -124,7 +124,7 @@
                             <tr>
                                 <input value="${item.invoiceId}" type="hidden" name="invoiceId">
                                 <td><input type="checkbox" name="isSel" class="chb"></td>
-                                <td>${item.fbaId}</td>
+                                <td>${item.remark}</td>
                                 <td>${item.invoiceRemark}</td>
                                 <td>${item.country}</td>
                                 <td>${item.inhomeConweight}/${item.outhomeConweight2}</td>
