@@ -108,7 +108,7 @@
                         <tbody>
                         <c:forEach items="${page.list}" var="item">
                             <tr>
-                                <td><input name="ids" value="${item.serviceId}" type="checkbox"></td>
+                                <td><input name="id" value="${item.serviceId}" type="checkbox"></td>
                                 <td>
                                         ${item.serviceName}
                                 </td>
@@ -116,7 +116,7 @@
                                 <td>${item.price}</td>
 
                                 <td class="text-center">
-                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/system/service/toUpdate.do?id=${item.companyId}"'>编辑</button>
+                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/system/service/toUpdate.do?id=${item.serviceId}"'>编辑</button>
                                 </td>
 
                             </tr>
