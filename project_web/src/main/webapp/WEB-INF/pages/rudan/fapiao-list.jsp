@@ -108,7 +108,7 @@
                                 <td>${item.remark}</td>
 
                                 <th class="text-center">
-                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/fapiao/work.do?id=${item.invoiceId}"'>发票打印</button>
+                                    <button type="button" class="btn bg-olive btn-xs" onclick='location.href="${ctx}/rudan/fapiao/work.do?invoiceId=${item.invoiceId}"'>下载发票</button>
                                 </th>
                             </tr>
                         </c:forEach>
