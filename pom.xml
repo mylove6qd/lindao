@@ -20,7 +20,7 @@
     <!--集中定义版本号-->
     <properties>
         <junit.version>4.12</junit.version>
-        <spring.version>5.0.2.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
 
         <!--        分页插件pagehelper版本号-->
         <pagehelper.version>5.1.2</pagehelper.version>
